@@ -4,7 +4,7 @@
  * I pledge
  * @author George
  */
-package project.old;
+package project.cpsc470;
 
 import java.util.Random;
 

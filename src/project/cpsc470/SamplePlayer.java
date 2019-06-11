@@ -4,12 +4,12 @@
  * I pledge
  * @author George
  */
-package project.old;
+package project.cpsc470;
 
 /**
  *
  */
-public class SamplePlayer {
+public class SamplePlayer implements PlayerStrategy {
 
 	public boolean doesPlayerHit(String[] playerCards, String dealerUpCard) {
 

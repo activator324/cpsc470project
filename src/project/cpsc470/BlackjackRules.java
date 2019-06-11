@@ -1,5 +1,5 @@
 
-package project.old;
+package project.cpsc470;
 
 public class BlackjackRules {
 
