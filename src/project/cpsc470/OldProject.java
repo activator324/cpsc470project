@@ -7,6 +7,7 @@
 package project.cpsc470;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  * A program that can be used by students to test their Player algorithms against a randomly dealt
@@ -19,8 +20,29 @@ public class OldProject {
 	 * @param args - not used
 	 */
 	public static void main(String[] args) {
+		Scanner scnr = new Scanner(System.in);
+		System.out.println("Enter class name of object to create:");
+		String myClassName = scnr.nextLine();
+		PlayerStrategy player1 = null;
+		
+		try {
+			player1 = (PlayerStrategy) Class.forName(myClassName).newInstance();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Usage: project.cpsc470.ClassName");
+		}
+
+		if (player1 == null)
+			System.exit(1);
+
 		// create and initialize player
-		SamplePlayer player1 = new SamplePlayer(); // change this to your class name like YourLastNamePlayer
+		//SamplePlayer player1 = new SamplePlayer(); // change this to your class name like YourLastNamePlayer
 		int bank1 = 100;
 		
 		// generate a random list of cards for a sample deck of 20
