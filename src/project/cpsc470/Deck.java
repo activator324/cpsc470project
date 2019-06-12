@@ -10,7 +10,7 @@ class Deck
 	private static int numCardsLeft;
 	private static int nextShoeIndex;
 
-	private static synchronized Deck getSingleton()
+	public static synchronized Deck getSingleton()
 	{
 		if (instance == null)
 			instance = new Deck();

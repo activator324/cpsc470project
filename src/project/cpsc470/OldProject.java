@@ -49,7 +49,7 @@ public class OldProject {
 		// generate a random list of cards for a sample deck of 20
 		int shoeSize = 20;
 		int numCardsLeft = shoeSize;
-		String[] deck = createNewDeck(shoeSize);
+		//String[] deck = createNewDeck(shoeSize);
 		String[] playedCards = new String[shoeSize];
 		
 		// place bets
@@ -64,13 +64,13 @@ public class OldProject {
 		int nextShoeIndex = 0;
 		int nextPlayerHandIndex = 2;
 		int nextDealerHandIndex = 2;
-		playerCards[0] = deck[0];
-		dealerCards[0] = deck[1];
-		playerCards[1] = deck[2];
-		dealerCards[1] = deck[3];
-		numCardsLeft -= 4;
+		playerCards[0] = Deck.getSingleton().getCard(0);
+		dealerCards[0] = Deck.getSingleton().getCard(1);
+		playerCards[1] = Deck.getSingleton().getCard(2);
+		dealerCards[1] = Deck.getSingleton().getCard(3);
+		//numCardsLeft -= 4;
 		dealerUpCard = dealerCards[1];
-		nextShoeIndex = 4;
+		//nextShoeIndex = 4;
 		
 		// player's hand
 		boolean doesPlayerHit = true;
@@ -78,9 +78,7 @@ public class OldProject {
 			printCurrentHandInfo(playerCards);
 			doesPlayerHit = player1.doesPlayerHit(playerCards, dealerUpCard);
 			if (doesPlayerHit) {
-				playerCards[nextPlayerHandIndex] = deck[nextShoeIndex];
-				nextShoeIndex++;
-				numCardsLeft--;
+				playerCards[nextPlayerHandIndex] = Deck.getSingleton().getCard(nextShoeIndex);
 				nextPlayerHandIndex++;
 				System.out.println("Player hits.");
 			}
@@ -94,9 +92,7 @@ public class OldProject {
 			printCurrentHandInfo(dealerCards);
 			doesDealerHit = BlackjackRules.doesDealerHit(dealerCards);
 			if (doesDealerHit) {
-				dealerCards[nextDealerHandIndex] = deck[nextShoeIndex];
-				nextShoeIndex++;
-				numCardsLeft--;
+				dealerCards[nextDealerHandIndex] = Deck.getSingleton().getCard(nextShoeIndex);
 				nextDealerHandIndex++;
 				System.out.println("Dealer hits.");
 			}
@@ -156,7 +152,7 @@ public class OldProject {
 	 * @param shoeSize - the number of cards in the "shoe". This is usually a multiple of 52
 	 * @return an array of cards representing a deck of the specified number of cards
 	 */
-	private static String[] createNewDeck(int shoeSize) {
+	private static String[] createNewdeck(int shoeSize) {
 
 		String[] deck = new String[shoeSize];
 		Random random = new Random();
