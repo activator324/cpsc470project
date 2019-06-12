@@ -21,10 +21,11 @@ public class OldProject {
 	 */
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
-		System.out.println("Enter class name of object to create:");
+		System.out.println("Enter class simple name of object to create:");
 		String myClassName = scnr.nextLine();
 		PlayerStrategy player1 = null;
-		
+		myClassName = "project.cpsc470." + myClassName;
+
 		try {
 			player1 = (PlayerStrategy) Class.forName(myClassName).newInstance();
 		} catch (InstantiationException e) {
@@ -35,7 +36,7 @@ public class OldProject {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
-			System.out.println("Usage: project.cpsc470.ClassName");
+			System.out.println("Usage: ClassSimpleName");
 		}
 
 		if (player1 == null)
