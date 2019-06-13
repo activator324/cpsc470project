@@ -71,10 +71,6 @@ class Deck
 		}
 	}
 
-	void setNumCardsLeft(int numCardsLeft) { this.numCardsLeft = numCardsLeft; }
-
-	void setNextShoeIndex(int nextShoeIndex) { this.nextShoeIndex = nextShoeIndex; }
-
 	String getCard(int shoeIndex) 
 	{ 
 		nextShoeIndex++;
