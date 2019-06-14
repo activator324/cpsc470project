@@ -1,6 +1,8 @@
 package project.cpsc470;
 
 import java.util.Random;
+import java.util.Iterator;
+import java.util.Arrays;
 
 class Deck
 {
@@ -9,6 +11,7 @@ class Deck
 	private static String[] deck;
 	private static int numCardsLeft;
 	private static int nextShoeIndex;
+	private Iterator<String> i;
 
 	public static synchronized Deck getSingleton()
 	{
@@ -74,16 +77,15 @@ class Deck
 				break;
 			}
 		}
+		i = Arrays.asList(deck).iterator();
+
 	}
 
 	String getCard() 
 	{ 
-		if (numCardsLeft == 0)
+		if (!i.hasNext())
 			shuffle(52);
-		String card = deck[nextShoeIndex];
-		nextShoeIndex++;
-		numCardsLeft--;
-		return card; 
+	        return i.next();	
 	} 
 
 }
