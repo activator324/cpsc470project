@@ -17,11 +17,16 @@ class Deck
 		return instance;
 	}
 
-	private Deck() { this(20); }
+	private Deck() { this(52); }
 
 	private Deck(int shoeSize)
 	{
 		deck = new String[shoeSize];
+		shuffle(shoeSize);
+	}
+
+	void shuffle(int shoeSize)
+	{
 		numCardsLeft = shoeSize;
 		nextShoeIndex = 0;
 		Random random = new Random();
@@ -71,11 +76,14 @@ class Deck
 		}
 	}
 
-	String getCard(int shoeIndex) 
+	String getCard() 
 	{ 
+		if (numCardsLeft == 0)
+			shuffle(52);
+		String card = deck[nextShoeIndex];
 		nextShoeIndex++;
 		numCardsLeft--;
-		return deck[shoeIndex]; 
+		return card; 
 	} 
 
 }

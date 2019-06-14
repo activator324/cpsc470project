@@ -35,7 +35,6 @@ public class OldProject {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			System.out.println("Usage: ClassSimpleName");
 		}
 
@@ -52,86 +51,95 @@ public class OldProject {
 		//String[] deck = createNewDeck(shoeSize);
 		String[] playedCards = new String[shoeSize];
 		
-		// place bets
-		int bet1 = player1.placeBet(bank1, playedCards, numCardsLeft);
-		System.out.println("Player Bank = " + bank1);
-		System.out.println("Player bets " + bet1 + "\n==========");
+		while (true) //play game 
+		{
+			// place bets
+			int bet1 = player1.placeBet(bank1, playedCards, numCardsLeft);
+			System.out.println("Player Bank = " + bank1);
+			System.out.println("Player bets " + bet1 + "\n==========");
 		
-		//deal initial cards
-		String[] playerCards = createEmptyHand(5);
-		String[] dealerCards = createEmptyHand(5);
-		String dealerUpCard = "";
-		int nextShoeIndex = 0;
-		int nextPlayerHandIndex = 2;
-		int nextDealerHandIndex = 2;
-		playerCards[0] = Deck.getSingleton().getCard(0);
-		dealerCards[0] = Deck.getSingleton().getCard(1);
-		playerCards[1] = Deck.getSingleton().getCard(2);
-		dealerCards[1] = Deck.getSingleton().getCard(3);
-		//numCardsLeft -= 4;
-		dealerUpCard = dealerCards[1];
-		//nextShoeIndex = 4;
-		
-		// player's hand
-		boolean doesPlayerHit = true;
-		while (doesPlayerHit) {
-			printCurrentHandInfo(playerCards);
-			doesPlayerHit = player1.doesPlayerHit(playerCards, dealerUpCard);
-			if (doesPlayerHit) {
-				playerCards[nextPlayerHandIndex] = Deck.getSingleton().getCard(nextShoeIndex);
-				nextPlayerHandIndex++;
-				System.out.println("Player hits.");
+			
+			//deal initial cards
+			String[] playerCards = createEmptyHand(52);
+			String[] dealerCards = createEmptyHand(52);
+			String dealerUpCard = "";
+			int nextShoeIndex = 0;
+			int nextPlayerHandIndex = 2;
+			int nextDealerHandIndex = 2;
+			playerCards[0] = Deck.getSingleton().getCard();
+			dealerCards[0] = Deck.getSingleton().getCard();
+			playerCards[1] = Deck.getSingleton().getCard();
+			dealerCards[1] = Deck.getSingleton().getCard();
+			//numCardsLeft -= 4;
+			dealerUpCard = dealerCards[1];
+			//nextShoeIndex = 4;	
+			// player's hand
+			boolean doesPlayerHit = true;
+			while (doesPlayerHit) {
+				printCurrentHandInfo(playerCards);
+				doesPlayerHit = player1.doesPlayerHit(playerCards, dealerUpCard);
+				if (doesPlayerHit) {
+					playerCards[nextPlayerHandIndex] = Deck.getSingleton().getCard();
+					nextPlayerHandIndex++;
+					System.out.println("Player hits.");
+					//printCurrentHandInfo(playerCards);
+				}
+				else
+					System.out.println("Player stands.");
+				int points = BlackjackRules.countPoints(playerCards);
+				if (points > 21)
+					break;
 			}
-			else
-				System.out.println("Player stands.");
-		}
-		
-		// dealer's hand
-		boolean doesDealerHit = true;
-		while (doesDealerHit) {
-			printCurrentHandInfo(dealerCards);
-			doesDealerHit = BlackjackRules.doesDealerHit(dealerCards);
-			if (doesDealerHit) {
-				dealerCards[nextDealerHandIndex] = Deck.getSingleton().getCard(nextShoeIndex);
-				nextDealerHandIndex++;
-				System.out.println("Dealer hits.");
+			
+			// dealer's hand
+			boolean doesDealerHit = true;
+			while (doesDealerHit) {
+				printCurrentHandInfo(dealerCards);
+				doesDealerHit = BlackjackRules.doesDealerHit(dealerCards);
+				if (doesDealerHit) {
+					dealerCards[nextDealerHandIndex] = Deck.getSingleton().getCard();
+					nextDealerHandIndex++;
+					System.out.println("Dealer hits.");
+				}
+				else
+					System.out.println("Dealer stands.");
 			}
-			else
-				System.out.println("Dealer stands.");
-		}
 
-		int dealerPoints = BlackjackRules.countPoints(dealerCards);
-		int playerPoints = BlackjackRules.countPoints(playerCards);
-		System.out.println("==========\nDealer has: " + dealerPoints);
-		System.out.println("Player has: " + playerPoints);
-		
-		// figure out winner - this is not correct for all cases, but it is close enough to test with		
-		if (dealerPoints > playerPoints && dealerPoints < 22 
-				|| playerPoints > 21) {
-			System.out.println("Player lost!");
-			bank1-=bet1;
-		} else if (dealerPoints == 21) {// check dealer blackjack
-			if (dealerCards[2]=="0") {
-				if (playerPoints == 21 && playerCards[2]=="0") {
+			int dealerPoints = BlackjackRules.countPoints(dealerCards);
+			int playerPoints = BlackjackRules.countPoints(playerCards);
+			System.out.println("==========\nDealer has: " + dealerPoints);
+			System.out.println("Player has: " + playerPoints);
+			
+			// figure out winner - this is not correct for all cases, but it is close enough to test with		
+			if (dealerPoints > playerPoints && dealerPoints < 22 
+					|| playerPoints > 21) {
+				System.out.println("Player lost!");
+				bank1-=bet1;
+			} else if (dealerPoints == 21) {// check dealer blackjack
+				if (dealerCards[2]=="0") {
+					if (playerPoints == 21 && playerCards[2]=="0") {
+						System.out.println("Push game!");
+					}
+					else {
+						System.out.println("Dealer has Blackjack!!!");
+						bank1-=bet1;
+					}
+				} else if (playerPoints == dealerPoints){
 					System.out.println("Push game!");
 				}
-				else {
-					System.out.println("Dealer has Blackjack!!!");
-					bank1-=bet1;
-				}
+			} else if(playerPoints == 21 && playerCards[2]=="0") { // check player blackjack
+				System.out.println("Player has Blackjack!!!");
+				bank1+= 1.5*bet1;
 			} else if (playerPoints == dealerPoints){
 				System.out.println("Push game!");
+			} else {
+				System.out.println("Player won!");
+				bank1+= bet1;
 			}
-		} else if(playerPoints == 21 && playerCards[2]=="0") { // check player blackjack
-			System.out.println("Player has Blackjack!!!");
-			bank1+= 1.5*bet1;
-		} else if (playerPoints == dealerPoints){
-			System.out.println("Push game!");
-		} else {
-			System.out.println("Player won!");
-			bank1+= bet1;
+			System.out.println("Player bank = " + bank1);
+			if (bank1 <= 0)
+				System.exit(0); 
 		}
-		System.out.println("Player bank = " + bank1);
 		
 	}
 
