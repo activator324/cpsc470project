@@ -8,7 +8,10 @@ package project.cpsc470;
 
 import java.util.Random;
 import java.util.Scanner;
-
+import java.util.List;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.ArrayList;
 /**
  * A program that can be used by students to test their Player algorithms against a randomly dealt
  * hand. The second line of the main() method must be changed by replacing "SamplePlayer" with the name of
@@ -21,124 +24,148 @@ public class OldProject {
 	 */
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
-		System.out.println("Enter class simple name of object to create:");
-		String myClassName = scnr.nextLine();
+
+		//Prompt user for number of players
+		System.out.println("Enter number of players:");
+		int numPlayers = scnr.nextInt();
+		PlayerStrategy[] players = new PlayerStrategy[numPlayers];
+		
 		PlayerStrategy player1 = null;
-		myClassName = "project.cpsc470." + myClassName;
-
-		try {
-			player1 = (PlayerStrategy) Class.forName(myClassName).newInstance();
-		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			System.out.println("Usage: ClassSimpleName");
+		
+		//For each player in game, prompt user for name.
+		for (int i = 0; i < players.length; i++)
+		{
+				System.out.println("Enter class simple name of object to create:");
+				String myClassName = scnr.next();
+				myClassName = "project.cpsc470." + myClassName;
+			try {
+				player1 = (PlayerStrategy) Class.forName(myClassName).newInstance();
+				players[i] = player1;
+			} catch (InstantiationException e) {
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				e.printStackTrace();
+			} catch (ClassNotFoundException e) {
+				System.out.println("Usage: ClassSimpleName");
+			}
 		}
-
 		if (player1 == null)
 			System.exit(1);
 
-		// create and initialize player
-		//SamplePlayer player1 = new SamplePlayer(); // change this to your class name like YourLastNamePlayer
-		int bank1 = 100;
-		
-		// generate a random list of cards for a sample deck of 20
-		int shoeSize = 20;
-		int numCardsLeft = shoeSize;
-		//String[] deck = createNewDeck(shoeSize);
-		String[] playedCards = new String[shoeSize];
-		
-		while (true) //play game 
+		ArrayList<PlayerStrategy> al = new ArrayList<PlayerStrategy>();
+		for (PlayerStrategy p: players)
 		{
-			// place bets
-			int bet1 = player1.placeBet(bank1, playedCards, numCardsLeft);
-			System.out.println("Player Bank = " + bank1);
-			System.out.println("Player bets " + bet1 + "\n==========");
+			al.add(p);
+		}
 		
-			
-			//deal initial cards
-			String[] playerCards = createEmptyHand(52);
-			String[] dealerCards = createEmptyHand(52);
-			String dealerUpCard = "";
-			int nextShoeIndex = 0;
-			int nextPlayerHandIndex = 2;
-			int nextDealerHandIndex = 2;
-			playerCards[0] = Deck.getSingleton().getCard();
-			dealerCards[0] = Deck.getSingleton().getCard();
-			playerCards[1] = Deck.getSingleton().getCard();
-			dealerCards[1] = Deck.getSingleton().getCard();
-			//numCardsLeft -= 4;
-			dealerUpCard = dealerCards[1];
-			//nextShoeIndex = 4;	
-			// player's hand
-			boolean doesPlayerHit = true;
-			while (doesPlayerHit) {
-				printCurrentHandInfo(playerCards);
-				doesPlayerHit = player1.doesPlayerHit(playerCards, dealerUpCard);
-				if (doesPlayerHit) {
-					playerCards[nextPlayerHandIndex] = Deck.getSingleton().getCard();
-					nextPlayerHandIndex++;
-					System.out.println("Player hits.");
-					//printCurrentHandInfo(playerCards);
-				}
-				else
-					System.out.println("Player stands.");
-				int points = BlackjackRules.countPoints(playerCards);
-				if (points > 21)
-					break;
-			}
-			
-			// dealer's hand
-			boolean doesDealerHit = true;
-			while (doesDealerHit) {
-				printCurrentHandInfo(dealerCards);
-				doesDealerHit = BlackjackRules.doesDealerHit(dealerCards);
-				if (doesDealerHit) {
-					dealerCards[nextDealerHandIndex] = Deck.getSingleton().getCard();
-					nextDealerHandIndex++;
-					System.out.println("Dealer hits.");
-				}
-				else
-					System.out.println("Dealer stands.");
-			}
+		int bank1;
+		
+		int numCardsLeft = Deck.getSingleton().getNumCardsLeft();
+		String[] playedCards = Deck.getSingleton().getPlayedCards();
 
-			int dealerPoints = BlackjackRules.countPoints(dealerCards);
-			int playerPoints = BlackjackRules.countPoints(playerCards);
-			System.out.println("==========\nDealer has: " + dealerPoints);
-			System.out.println("Player has: " + playerPoints);
+		while (numPlayers > 0) // Play game while there are still players 
+		{	
+			//Iterate through each player
+			for (Iterator<PlayerStrategy> iterator = al.iterator(); iterator.hasNext();)
+			{
+				player1 = iterator.next();
+				
+				bank1 = player1.getBank();
+				String name = player1.getClass().getSimpleName();
+				System.out.println("It is " + name + "'s turn.");
+				
+				// place bets
+				int bet1 = player1.placeBet(bank1, playedCards, numCardsLeft);
+				System.out.println(name + " Bank = " + bank1);
+				System.out.println(name + " bets " + bet1 + "\n==========");
 			
-			// figure out winner - this is not correct for all cases, but it is close enough to test with		
-			if (dealerPoints > playerPoints && dealerPoints < 22 
-					|| playerPoints > 21) {
-				System.out.println("Player lost!");
-				bank1-=bet1;
-			} else if (dealerPoints == 21) {// check dealer blackjack
-				if (dealerCards[2]=="0") {
-					if (playerPoints == 21 && playerCards[2]=="0") {
+				
+				//deal initial cards
+				String[] playerCards = createEmptyHand(52);
+				String[] dealerCards = createEmptyHand(52);
+				String dealerUpCard = "";
+				int nextShoeIndex = 0;
+				int nextPlayerHandIndex = 2;
+				int nextDealerHandIndex = 2;
+				playerCards[0] = Deck.getSingleton().getCard();
+				dealerCards[0] = Deck.getSingleton().getCard();
+				playerCards[1] = Deck.getSingleton().getCard();
+				dealerCards[1] = Deck.getSingleton().getCard();
+				//numCardsLeft -= 4;
+				dealerUpCard = dealerCards[1];
+				//nextShoeIndex = 4;	
+				// player's hand
+				boolean doesPlayerHit = true;
+				while (doesPlayerHit) {
+					printCurrentHandInfo(playerCards);
+					doesPlayerHit = player1.doesPlayerHit(playerCards, dealerUpCard);
+					if (doesPlayerHit) {
+						playerCards[nextPlayerHandIndex] = Deck.getSingleton().getCard();
+						nextPlayerHandIndex++;
+						System.out.println(name + " hits.");
+						//printCurrentHandInfo(playerCards);
+					}
+					else
+						System.out.println(name + " stands.");
+					int points = BlackjackRules.countPoints(playerCards);
+					if (points > 21)
+						break;
+				}
+				
+				// dealer's hand
+				boolean doesDealerHit = true;
+				while (doesDealerHit) {
+					printCurrentHandInfo(dealerCards);
+					doesDealerHit = BlackjackRules.doesDealerHit(dealerCards);
+					if (doesDealerHit) {
+						dealerCards[nextDealerHandIndex] = Deck.getSingleton().getCard();
+						nextDealerHandIndex++;
+						System.out.println("Dealer hits.");
+					}
+					else
+						System.out.println("Dealer stands.");
+				}
+
+				int dealerPoints = BlackjackRules.countPoints(dealerCards);
+				int playerPoints = BlackjackRules.countPoints(playerCards);
+				System.out.println("==========\nDealer has: " + dealerPoints);
+				System.out.println(name + " has: " + playerPoints);
+				
+				// figure out winner - this is not correct for all cases, but it is close enough to test with		
+				if (dealerPoints > playerPoints && dealerPoints < 22 
+						|| playerPoints > 21) {
+					System.out.println(name + " lost!");
+					player1.setBank(bank1-=bet1);
+				} else if (dealerPoints == 21) {// check dealer blackjack
+					if (dealerCards[2]=="0") {
+						if (playerPoints == 21 && playerCards[2]=="0") {
+							System.out.println("Push game!");
+						}
+						else {
+							System.out.println("Dealer has Blackjack!!!");
+							player1.setBank(bank1-=bet1);
+						}
+					} else if (playerPoints == dealerPoints){
 						System.out.println("Push game!");
 					}
-					else {
-						System.out.println("Dealer has Blackjack!!!");
-						bank1-=bet1;
-					}
+				} else if(playerPoints == 21 && playerCards[2]=="0") { // check player blackjack
+					System.out.println(name + " has Blackjack!!!");
+					player1.setBank(bank1+= 1.5*bet1);
 				} else if (playerPoints == dealerPoints){
 					System.out.println("Push game!");
+				} else {
+					System.out.println(name + " won!");
+					player1.setBank(bank1+= bet1);
 				}
-			} else if(playerPoints == 21 && playerCards[2]=="0") { // check player blackjack
-				System.out.println("Player has Blackjack!!!");
-				bank1+= 1.5*bet1;
-			} else if (playerPoints == dealerPoints){
-				System.out.println("Push game!");
-			} else {
-				System.out.println("Player won!");
-				bank1+= bet1;
+				
+				if (bank1 <= 0)
+				{
+					System.out.println(name + " bank = " + bank1);
+					iterator.remove(); 
+					numPlayers--;
+				}
+				System.out.println("==========");
 			}
-			System.out.println("Player bank = " + bank1);
-			if (bank1 <= 0)
-				System.exit(0); 
 		}
 		
 	}

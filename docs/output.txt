@@ -1,0 +1,2390 @@
+Enter number of players:
+Enter class simple name of object to create:
+Enter class simple name of object to create:
+It is SamplePlayer's turn.
+SamplePlayer Bank = 100
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: K 5
+Points: 15
+SamplePlayer stands.
+
+Current Hand
+Cards: K J
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+SamplePlayer has: 15
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 100
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 8
+Points: 18
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 4 2
+Points: 6
+Dealer hits.
+
+Current Hand
+Cards: 4 2 9
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 4 2 9 2
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 18
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 90
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 8 7
+Points: 15
+SamplePlayer stands.
+
+Current Hand
+Cards: 6 A
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+SamplePlayer has: 15
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 110
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 9 A
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: Q 10
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 20
+Push game!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 80
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 9 7
+Points: 16
+SamplePlayer stands.
+
+Current Hand
+Cards: A 7
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+SamplePlayer has: 16
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 110
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 4
+Points: 14
+PlayerRaQuan stands.
+
+Current Hand
+Cards: J 5
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: J 5 3
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 14
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 70
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: Q 7
+Points: 17
+SamplePlayer stands.
+
+Current Hand
+Cards: Q 2
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: Q 2 7
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+SamplePlayer has: 17
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 100
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 7
+Points: 14
+PlayerRaQuan stands.
+
+Current Hand
+Cards: K 7
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 14
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 60
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 10 9
+Points: 19
+SamplePlayer stands.
+
+Current Hand
+Cards: 3 6
+Points: 9
+Dealer hits.
+
+Current Hand
+Cards: 3 6 K
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+SamplePlayer has: 19
+Push game!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 90
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: A 7
+Points: 18
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 3 K
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 3 K 4
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 18
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 60
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: A Q
+Points: 21
+SamplePlayer stands.
+
+Current Hand
+Cards: 5 10
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 5 10 10
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+SamplePlayer has: 21
+SamplePlayer has Blackjack!!!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 100
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: A 10
+Points: 21
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 8 7
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 8 7 Q
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+PlayerRaQuan has: 21
+PlayerRaQuan has Blackjack!!!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 75
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 3 9
+Points: 12
+SamplePlayer stands.
+
+Current Hand
+Cards: 6 8
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 6 8 J
+Points: 24
+Dealer stands.
+==========
+Dealer has: 24
+SamplePlayer has: 12
+SamplePlayer won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 115
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 8 5
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: J 5
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: J 5 10
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+PlayerRaQuan has: 13
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 85
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 5 6
+Points: 11
+SamplePlayer stands.
+
+Current Hand
+Cards: 5 7
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 5 7 4
+Points: 16
+Dealer hits.
+
+Current Hand
+Cards: 5 7 4 J
+Points: 26
+Dealer stands.
+==========
+Dealer has: 26
+SamplePlayer has: 11
+SamplePlayer won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 125
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: A 8
+Points: 19
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 9 J
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 19
+Push game!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 95
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 9 8
+Points: 17
+SamplePlayer stands.
+
+Current Hand
+Cards: 7 A
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+SamplePlayer has: 17
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 125
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 6 7
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 9 7
+Points: 16
+Dealer hits.
+
+Current Hand
+Cards: 9 7 3
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 13
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 85
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: K 8
+Points: 18
+SamplePlayer stands.
+
+Current Hand
+Cards: 8 K
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+SamplePlayer has: 18
+Push game!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 115
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 6
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 4 K
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 4 K Q
+Points: 24
+Dealer stands.
+==========
+Dealer has: 24
+PlayerRaQuan has: 13
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 85
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 3 10
+Points: 13
+SamplePlayer stands.
+
+Current Hand
+Cards: 5 8
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 5 8 5
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+SamplePlayer has: 13
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 125
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 6 4
+Points: 10
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 6 4 4
+Points: 14
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 10 3
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 10 3 2
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 10 3 2 Q
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+PlayerRaQuan has: 14
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 75
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: J J
+Points: 20
+SamplePlayer stands.
+
+Current Hand
+Cards: J 5
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: J 5 K
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+SamplePlayer has: 20
+SamplePlayer won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 135
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: A 8
+Points: 19
+PlayerRaQuan stands.
+
+Current Hand
+Cards: A 9
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 19
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 85
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 4 4
+Points: 8
+SamplePlayer stands.
+
+Current Hand
+Cards: J 8
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+SamplePlayer has: 8
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 125
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 4 4
+Points: 8
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 4 4 K
+Points: 18
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 10 4
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 10 4 J
+Points: 24
+Dealer stands.
+==========
+Dealer has: 24
+PlayerRaQuan has: 18
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 75
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: Q K
+Points: 20
+SamplePlayer stands.
+
+Current Hand
+Cards: 3 7
+Points: 10
+Dealer hits.
+
+Current Hand
+Cards: 3 7 5
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 3 7 5 8
+Points: 23
+Dealer stands.
+==========
+Dealer has: 23
+SamplePlayer has: 20
+SamplePlayer won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 135
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: J 3
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 7 3
+Points: 10
+Dealer hits.
+
+Current Hand
+Cards: 7 3 6
+Points: 16
+Dealer hits.
+
+Current Hand
+Cards: 7 3 6 2
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 13
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 85
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: A 3
+Points: 14
+SamplePlayer stands.
+
+Current Hand
+Cards: 3 Q
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 3 Q 2
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 3 Q 2 J
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+SamplePlayer has: 14
+SamplePlayer won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 125
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 5
+Points: 15
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 3 A
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 3 A Q
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 3 A Q Q
+Points: 24
+Dealer stands.
+==========
+Dealer has: 24
+PlayerRaQuan has: 15
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 95
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 2 8
+Points: 10
+SamplePlayer stands.
+
+Current Hand
+Cards: 4 K
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 4 K 2
+Points: 16
+Dealer hits.
+
+Current Hand
+Cards: 4 K 2 4
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+SamplePlayer has: 10
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 135
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 4 K
+Points: 14
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 3 A
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 3 A A
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 3 A A J
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 3 A A J 3
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 14
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 85
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 6 4
+Points: 10
+SamplePlayer stands.
+
+Current Hand
+Cards: 8 J
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+SamplePlayer has: 10
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 125
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 2 4
+Points: 6
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 2 4 Q
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 10 2
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 10 2 9
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+PlayerRaQuan has: 16
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 75
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: Q 3
+Points: 13
+SamplePlayer stands.
+
+Current Hand
+Cards: A K
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+SamplePlayer has: 13
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 115
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: A 4
+Points: 15
+PlayerRaQuan stands.
+
+Current Hand
+Cards: Q K
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 15
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 65
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 8 10
+Points: 18
+SamplePlayer stands.
+
+Current Hand
+Cards: A J
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+SamplePlayer has: 18
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 105
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 2 Q
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 8 4
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 8 4 5
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 55
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 3 3
+Points: 6
+SamplePlayer stands.
+
+Current Hand
+Cards: Q A
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+SamplePlayer has: 6
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 95
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 4 8
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: J 7
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 45
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 7 10
+Points: 17
+SamplePlayer stands.
+
+Current Hand
+Cards: A A
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: A A Q
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: A A Q 3
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: A A Q 3 6
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+SamplePlayer has: 17
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 85
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 3 K
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 3 8
+Points: 11
+Dealer hits.
+
+Current Hand
+Cards: 3 8 Q
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+PlayerRaQuan has: 13
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 35
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 4 J
+Points: 14
+SamplePlayer stands.
+
+Current Hand
+Cards: 4 3
+Points: 7
+Dealer hits.
+
+Current Hand
+Cards: 4 3 5
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 4 3 5 8
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+SamplePlayer has: 14
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 75
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 3 K
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 3 7
+Points: 10
+Dealer hits.
+
+Current Hand
+Cards: 3 7 9
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 13
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 25
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 4 9
+Points: 13
+SamplePlayer stands.
+
+Current Hand
+Cards: J 5
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: J 5 9
+Points: 24
+Dealer stands.
+==========
+Dealer has: 24
+SamplePlayer has: 13
+SamplePlayer won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 65
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 6 Q
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 5 7
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 5 7 2
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 5 7 2 8
+Points: 22
+Dealer stands.
+==========
+Dealer has: 22
+PlayerRaQuan has: 16
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 35
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 3 3
+Points: 6
+SamplePlayer stands.
+
+Current Hand
+Cards: 7 10
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+SamplePlayer has: 6
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 75
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 7
+Points: 14
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 5 J
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 5 J 7
+Points: 22
+Dealer stands.
+==========
+Dealer has: 22
+PlayerRaQuan has: 14
+PlayerRaQuan won!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 25
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: A A
+Points: 12
+SamplePlayer stands.
+
+Current Hand
+Cards: 5 6
+Points: 11
+Dealer hits.
+
+Current Hand
+Cards: 5 6 6
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+SamplePlayer has: 12
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 85
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 K
+Points: 17
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 7 8
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 7 8 3
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 17
+PlayerRaQuan lost!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 15
+SamplePlayer bets 10
+==========
+
+Current Hand
+Cards: 9 2
+Points: 11
+SamplePlayer stands.
+
+Current Hand
+Cards: 6 2
+Points: 8
+Dealer hits.
+
+Current Hand
+Cards: 6 2 4
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 6 2 4 A
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 6 2 4 A 3
+Points: 16
+Dealer hits.
+
+Current Hand
+Cards: 6 2 4 A 3 A
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+SamplePlayer has: 11
+SamplePlayer lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 75
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 2 9
+Points: 11
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 2 9 J
+Points: 21
+PlayerRaQuan stands.
+
+Current Hand
+Cards: Q 5
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: Q 5 6
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+PlayerRaQuan has: 21
+Push game!
+==========
+It is SamplePlayer's turn.
+SamplePlayer Bank = 5
+SamplePlayer bets 5
+==========
+
+Current Hand
+Cards: 9 2
+Points: 11
+SamplePlayer stands.
+
+Current Hand
+Cards: 5 6
+Points: 11
+Dealer hits.
+
+Current Hand
+Cards: 5 6 8
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+SamplePlayer has: 11
+SamplePlayer lost!
+SamplePlayer bank = 0
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 75
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 4 8
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 7 J
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 65
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 6 J
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 3 10
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 3 10 6
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 16
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 55
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 Q
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 10 J
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 20
+Push game!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 55
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 6
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: J 8
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 13
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 45
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 4
+Points: 11
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 7 4 A
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: J 9
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 35
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 4
+Points: 11
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 7 4 A
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 3 7
+Points: 10
+Dealer hits.
+
+Current Hand
+Cards: 3 7 5
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 3 7 5 7
+Points: 22
+Dealer stands.
+==========
+Dealer has: 22
+PlayerRaQuan has: 12
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 45
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: Q 7
+Points: 17
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 5 3
+Points: 8
+Dealer hits.
+
+Current Hand
+Cards: 5 3 K
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 17
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 35
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 Q
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: K 7
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 20
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 45
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 K
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 6 J
+Points: 16
+Dealer hits.
+
+Current Hand
+Cards: 6 J 4
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 20
+Push game!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 45
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 2 7
+Points: 9
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 2 7 2
+Points: 11
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 2 7 2 Q
+Points: 21
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 10 5
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 10 5 Q
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+PlayerRaQuan has: 21
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 55
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: Q 2
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: J Q
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 45
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 A
+Points: 18
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 4 9
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 4 9 J
+Points: 23
+Dealer stands.
+==========
+Dealer has: 23
+PlayerRaQuan has: 18
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 55
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: K J
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 2 9
+Points: 11
+Dealer hits.
+
+Current Hand
+Cards: 2 9 K
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+PlayerRaQuan has: 20
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 45
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: Q K
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: Q 7
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 20
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 55
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 6
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 7 7
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 7 7 6
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 13
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 45
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 4
+Points: 11
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 7 4 A
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: Q A
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 35
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 8 9
+Points: 17
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 8 3
+Points: 11
+Dealer hits.
+
+Current Hand
+Cards: 8 3 8
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 17
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 25
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 Q
+Points: 17
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 2 7
+Points: 9
+Dealer hits.
+
+Current Hand
+Cards: 2 7 9
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 17
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 15
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 K
+Points: 17
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 2 3
+Points: 5
+Dealer hits.
+
+Current Hand
+Cards: 2 3 7
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 2 3 7 J
+Points: 22
+Dealer stands.
+==========
+Dealer has: 22
+PlayerRaQuan has: 17
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 25
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 3 10
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: A 2
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: A 2 2
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: A 2 2 J
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: A 2 2 J K
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+PlayerRaQuan has: 13
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 35
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: Q 7
+Points: 17
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 2 10
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 2 10 8
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 17
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 25
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: A 2
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 5 7
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 5 7 J
+Points: 22
+Dealer stands.
+==========
+Dealer has: 22
+PlayerRaQuan has: 13
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 35
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 3 5
+Points: 8
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 3 5 8
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 7 Q
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 16
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 25
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: A 5
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 5 10
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: 5 10 10
+Points: 25
+Dealer stands.
+==========
+Dealer has: 25
+PlayerRaQuan has: 16
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 35
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 6 10
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 9 10
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 16
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 25
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 8
+Points: 15
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 2 6
+Points: 8
+Dealer hits.
+
+Current Hand
+Cards: 2 6 6
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 2 6 6 8
+Points: 22
+Dealer stands.
+==========
+Dealer has: 22
+PlayerRaQuan has: 15
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 35
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: A 10
+Points: 21
+PlayerRaQuan stands.
+
+Current Hand
+Cards: K 10
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 21
+PlayerRaQuan has Blackjack!!!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 50
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 J
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 9 9
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 20
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 60
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 2
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 2 10
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 2 10 7
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 50
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: J 4
+Points: 14
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 8 10
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 14
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 40
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 5 J
+Points: 15
+PlayerRaQuan stands.
+
+Current Hand
+Cards: Q J
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 15
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 30
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 9 10
+Points: 19
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 3 K
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 3 K Q
+Points: 23
+Dealer stands.
+==========
+Dealer has: 23
+PlayerRaQuan has: 19
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 40
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: J J
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 7 J
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 20
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 50
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 2 7
+Points: 9
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 2 7 10
+Points: 19
+PlayerRaQuan stands.
+
+Current Hand
+Cards: A 4
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: A 4 K
+Points: 15
+Dealer hits.
+
+Current Hand
+Cards: A 4 K 7
+Points: 22
+Dealer stands.
+==========
+Dealer has: 22
+PlayerRaQuan has: 19
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 60
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 4 9
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 8 Q
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 13
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 50
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: J 6
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: K 8
+Points: 18
+Dealer stands.
+==========
+Dealer has: 18
+PlayerRaQuan has: 16
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 40
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: K 3
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 7 J
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 13
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 30
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 4 2
+Points: 6
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 4 2 Q
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: Q A
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+PlayerRaQuan has: 16
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 20
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 10 8
+Points: 18
+PlayerRaQuan stands.
+
+Current Hand
+Cards: K Q
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 18
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 10
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 4 J
+Points: 14
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 9 5
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: 9 5 9
+Points: 23
+Dealer stands.
+==========
+Dealer has: 23
+PlayerRaQuan has: 14
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 20
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 J
+Points: 17
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 10 3
+Points: 13
+Dealer hits.
+
+Current Hand
+Cards: 10 3 K
+Points: 23
+Dealer stands.
+==========
+Dealer has: 23
+PlayerRaQuan has: 17
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 30
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: K 2
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 8 3
+Points: 11
+Dealer hits.
+
+Current Hand
+Cards: 8 3 K
+Points: 21
+Dealer stands.
+==========
+Dealer has: 21
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 20
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: Q Q
+Points: 20
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 2 K
+Points: 12
+Dealer hits.
+
+Current Hand
+Cards: 2 K 8
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 20
+Push game!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 20
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 3 10
+Points: 13
+PlayerRaQuan stands.
+
+Current Hand
+Cards: J 4
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: J 4 8
+Points: 22
+Dealer stands.
+==========
+Dealer has: 22
+PlayerRaQuan has: 13
+PlayerRaQuan won!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 30
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 5 6
+Points: 11
+PlayerRaQuan hits.
+
+Current Hand
+Cards: 5 6 A
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 9 Q
+Points: 19
+Dealer stands.
+==========
+Dealer has: 19
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 20
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 5 A
+Points: 16
+PlayerRaQuan stands.
+
+Current Hand
+Cards: A 3
+Points: 14
+Dealer hits.
+
+Current Hand
+Cards: A 3 6
+Points: 20
+Dealer stands.
+==========
+Dealer has: 20
+PlayerRaQuan has: 16
+PlayerRaQuan lost!
+==========
+It is PlayerRaQuan's turn.
+PlayerRaQuan Bank = 10
+PlayerRaQuan bets 10
+==========
+
+Current Hand
+Cards: 7 5
+Points: 12
+PlayerRaQuan stands.
+
+Current Hand
+Cards: 7 K
+Points: 17
+Dealer stands.
+==========
+Dealer has: 17
+PlayerRaQuan has: 12
+PlayerRaQuan lost!
+PlayerRaQuan bank = 0
+==========

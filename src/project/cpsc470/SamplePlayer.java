@@ -9,7 +9,7 @@ package project.cpsc470;
 /**
  *
  */
-public class SamplePlayer implements PlayerStrategy {
+public class SamplePlayer extends PlayerStrategy {
 
 	public boolean doesPlayerHit(String[] playerCards, String dealerUpCard) {
 

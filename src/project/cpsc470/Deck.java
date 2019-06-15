@@ -9,7 +9,11 @@ class Deck
 	private static Deck instance;
 
 	private static String[] deck;
+	private static String[] playedCards;
 	private Iterator<String> i;
+
+	private int nextShoeIndex;
+	private int numCardsLeft;
 
 	public static synchronized Deck getSingleton()
 	{
@@ -23,11 +27,14 @@ class Deck
 	private Deck(int shoeSize)
 	{
 		deck = new String[shoeSize];
+		playedCards = new String[shoeSize];
 		shuffle(shoeSize);
 	}
 
 	private void shuffle(int shoeSize)
 	{
+		nextShoeIndex = 0;
+		numCardsLeft = shoeSize;
 		Random random = new Random();
 		for (int i=0; i<shoeSize; i++) {
 			int rNum = random.nextInt(13);
@@ -81,7 +88,18 @@ class Deck
 	{ 
 		if (!i.hasNext())
 			shuffle(52);
-	        return i.next();	
-	} 
+		String card = i.next();
 
+		playedCards[nextShoeIndex] = card;
+		
+		nextShoeIndex++;
+		numCardsLeft--;
+		
+		return card;
+		 
+	}	
+
+	String[] getPlayedCards() { return playedCards; }
+
+	int getNumCardsLeft() { return numCardsLeft; } 
 }

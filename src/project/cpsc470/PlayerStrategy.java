@@ -1,7 +1,14 @@
 package project.cpsc470;
 
-interface PlayerStrategy
+abstract class PlayerStrategy
 {
-	public boolean doesPlayerHit(String[] playerCards, String dealerUpCard); 
-	public int placeBet(int bank, String[] playedCards, int numCardsLeft); 
+	private int bank1;
+
+	PlayerStrategy() { bank1 = 100; }
+
+	abstract public boolean doesPlayerHit(String[] playerCards, String dealerUpCard); 
+	abstract public int placeBet(int bank, String[] playedCards, int numCardsLeft); 
+
+	void setBank(int bank) { bank1 = bank; }
+	int getBank() { return bank1; } 
 }
