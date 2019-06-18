@@ -1,22 +1,10 @@
-/**
- * CPSC 110
- * Mar 1, 2017
- * I pledge
- * @author George
- */
 package project.cpsc470;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.List;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.ArrayList;
-/**
- * A program that can be used by students to test their Player algorithms against a randomly dealt
- * hand. The second line of the main() method must be changed by replacing "SamplePlayer" with the name of
- * the student's file (usually StudentLastNamePlayer)
- */
+
 public class OldProject {
 
 	/**
