@@ -28,6 +28,16 @@ class Deck
 	{
 		deck = new String[shoeSize];
 		playedCards = new String[shoeSize];
+		String[] ranks = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+		for (int s = 0; s < 4; s++)
+		{
+		    nextShoeIndex = ranks.length * s;
+		    for (int r = 0; r < ranks.length; r++)
+		    {
+			deck[nextShoeIndex] = ranks[r];
+			nextShoeIndex++;
+		    }
+		}
 		shuffle(shoeSize);
 	}
 
@@ -35,51 +45,27 @@ class Deck
 	{
 		nextShoeIndex = 0;
 		numCardsLeft = shoeSize;
-		Random random = new Random();
-		for (int i=0; i<shoeSize; i++) {
-			int rNum = random.nextInt(13);
-			switch (rNum) {
-			case 0:
-				deck[i] = "K";
-				break;
-			case 1:
-				deck[i] = "A";
-				break;
-			case 2:
-				deck[i] = "2";
-				break;
-			case 3:
-				deck[i] = "3";
-				break;
-			case 4:
-				deck[i] = "4";
-				break;
-			case 5:
-				deck[i] = "5";
-				break;
-			case 6:
-				deck[i] = "6";
-				break;
-			case 7:
-				deck[i] = "7";
-				break;
-			case 8:
-				deck[i] = "8";
-				break;
-			case 9:
-				deck[i] = "9";
-				break;
-			case 10:
-				deck[i] = "10";
-				break;
-			case 11:
-				deck[i] = "J";
-				break;
-			case 12:
-				deck[i] = "Q";
-				break;
-			}
+
+		int[] randomArray = new int[52];
+		for (int i = 0; i < randomArray.length; i++)
+		{
+		    randomArray[i] = i;
 		}
+		for (int i = 0; i < deck.length; i++)
+		{
+		    int randomNumber = (int)(Math.random() * 52); //random number between 0 and 51
+		    int randomElement = randomArray[randomNumber];
+		    while (randomElement == -1) //checks to see if random number already used in deck
+		    {
+			randomNumber = (int)(Math.random() * 52); // generate new random number
+			randomElement = randomArray[randomNumber];
+		    }
+		    String swappedCard = deck[i];
+		    deck[i] = deck[randomNumber];
+		    deck[randomNumber] = swappedCard;
+		    randomArray[randomNumber] = -1;
+		}
+
 		i = Arrays.asList(deck).iterator();
 
 	}
