@@ -97,7 +97,12 @@ class Deck
 		
 		return card;
 		 
-	}	
+	}
+	
+	public void runGame()
+	{
+		
+	}
 
 	String[] getPlayedCards() { return playedCards; }
 

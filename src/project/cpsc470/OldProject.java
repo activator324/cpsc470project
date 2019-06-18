@@ -24,29 +24,150 @@ public class OldProject {
 	 */
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
-
-		//Prompt user for number of players
-		System.out.println("Enter number of players:");
-		int numPlayers = scnr.nextInt();
-		PlayerStrategy[] players = new PlayerStrategy[numPlayers];
 		
+		PlayerStrategy[] players = new PlayerStrategy[4];
+		int numPlayers = 0;
 		PlayerStrategy player1 = null;
 		
-		//For each player in game, prompt user for name.
-		for (int i = 0; i < players.length; i++)
+		
+		//Local or Online Multiplayer
+		
+		boolean OnlineOrLocal = false;
+		boolean OnlineOrLocalCheck = false;
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.println("Online or Local: ");
+		String answer = input.nextLine();
+		
+		if(answer.equalsIgnoreCase("Online"))
 		{
-				System.out.println("Enter class simple name of object to create:");
-				String myClassName = scnr.next();
-				myClassName = "project.cpsc470." + myClassName;
+			OnlineOrLocalCheck = true;
+			OnlineOrLocal = true;
+		}
+		else if(answer.equalsIgnoreCase("Local"))
+		{
+			OnlineOrLocalCheck = true;
+			OnlineOrLocal = false;
+		}
+		else
+			OnlineOrLocalCheck = false;
+		
+		while(!OnlineOrLocalCheck)
+		{
+			
+			System.out.println("Online or Local: ");
+			answer = input.nextLine();
+			
+			if(answer.equalsIgnoreCase("Online"))
+			{
+				OnlineOrLocalCheck = true;
+				OnlineOrLocal = true;
+			}
+			else if(answer.equalsIgnoreCase("Local"))
+			{
+				OnlineOrLocal = false;
+				OnlineOrLocalCheck = false;
+			}
+			else
+				OnlineOrLocalCheck = false;
+		}
+		
+		if(OnlineOrLocal)
+		{
+			//Get main player
+			System.out.println("Enter class-name of player to create (i.e.: Player\"name\"):");
+			String myClassName = scnr.next();
+			myClassName = "project.cpsc470." + myClassName;
+			
+				
 			try {
 				player1 = (PlayerStrategy) Class.forName(myClassName).newInstance();
-				players[i] = player1;
+				player1.setName(myClassName);
+				
 			} catch (InstantiationException e) {
 				e.printStackTrace();
 			} catch (IllegalAccessException e) {
 				e.printStackTrace();
 			} catch (ClassNotFoundException e) {
 				System.out.println("Usage: ClassSimpleName");
+			}
+			
+			System.out.println("Search for a Game or Host Game? (Host or Search):");
+			
+			answer = input.nextLine();
+			
+			boolean HostOrSearch = true;
+			
+			if(answer.equalsIgnoreCase("Host"))
+			{
+				HostOrSearch = false;
+			}
+			else if(answer.equalsIgnoreCase("Search"))
+			{
+				HostOrSearch = true;
+			}
+			
+			String name = player1.getName();
+			
+			if (!HostOrSearch)
+			{
+				String hostname = null;
+				int numberOfPlayers;
+				
+				System.out.println("Enter number of players to wait for: ");
+				numberOfPlayers = input.nextInt();
+				
+				
+				players[0] = player1;
+				
+				if(numberOfPlayers < 1 || numberOfPlayers > 4)
+				{
+					System.out.println("Not a valid number\nEnter number of players to wait for: ");
+					numberOfPlayers = input.nextInt();
+				}
+				
+				player1.createServer(name, hostname, 6000, numberOfPlayers);
+			}
+			else
+			{
+				System.out.println("Give ip address of host (x.x.x.x):");
+				String ipAddress = input.nextLine();
+				
+				System.out.println("Searching for game....");
+				
+				player1.setNetworkVariables(ipAddress, 6000);
+				
+				Thread playerThread = new Thread(player1);
+				
+				playerThread.start();
+			}
+		}
+		else
+		{
+			
+			System.out.println("Enter number of players:");
+			numPlayers = scnr.nextInt();
+			
+			players = new PlayerStrategy[numPlayers];
+			
+			//For each player in game, prompt user for name.
+			for (int i = 0; i < players.length; i++)
+			{
+					System.out.println("Enter class-name of player to create (i.e.: Player \"name\"):");
+					String myClassName = scnr.next();
+					myClassName = "project.cpsc470." + myClassName;
+				try {
+					player1 = (PlayerStrategy) Class.forName(myClassName).newInstance();
+					players[i] = player1;
+				} catch (InstantiationException e) {
+					e.printStackTrace();
+				} catch (IllegalAccessException e) {
+					e.printStackTrace();
+				} catch (ClassNotFoundException e) {
+					System.out.println("Usage: ClassSimpleName");
+				}
 			}
 		}
 		if (player1 == null)

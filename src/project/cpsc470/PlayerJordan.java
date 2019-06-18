@@ -1,9 +1,12 @@
 package project.cpsc470;
 
-/**
- *
- */
-public class PlayerRaQuan extends PlayerStrategy {
+import java.io.IOException;
+
+public class PlayerJordan extends PlayerStrategy{
+	
+	
+	
+	
 
 	public boolean doesPlayerHit(String[] playerCards, String dealerUpCard) {
 
@@ -101,7 +104,7 @@ public class PlayerRaQuan extends PlayerStrategy {
 			
 			if(!serverResponse.equalsIgnoreCase("none"))
 			{
-				System.out.println(serverResponse);
+				//System.out.println(serverResponse);
 				String response = parseServerInput(serverResponse);
 				
 				this.client.sendInput(response);
@@ -120,7 +123,8 @@ public class PlayerRaQuan extends PlayerStrategy {
 		this.ipAddress = ipAddress;
 		this.portNumber = portNumber;
 	}
+	
+	
 
-
-
+	
 }
